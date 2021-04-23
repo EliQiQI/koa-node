@@ -1,0 +1,26 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "pm2 start app.js --name koa-demo --watch",
+    "staging": "export NODE_ENV=staging && npm start",
+    "production": "export NODE_ENV=production && npm start",
+    "stop": "pm2 stop koa-demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "log4js": "^6.3.0"
+  }
+}
